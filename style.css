@@ -330,7 +330,8 @@
 @media screen and (max-width: 576px){
     .change-the-habits-container{
         width: 100%;
-        margin-top: 50px !important;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     .card {
         width: 331px;
@@ -382,7 +383,7 @@
     border-radius: 18px;
 }
 .join-team-content{
-    width: 443px;
+    max-width: 443px;
 
 }
 .join-team-content h2{
@@ -414,8 +415,8 @@
     cursor: pointer;  
 }
 .join-team-image{
-    width: 366px;
-    height: 312px;
+    max-width: 366px;
+    max-height: 312px;
 }
 
 .join-team-image img{
@@ -424,5 +425,24 @@
     border-radius: 18px;
 }
 
-
+/* Join Team section Responsive here */
+@media screen and (max-width: 576px){
+    .join-team{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .join-team-content h2{
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .join-team-content .btn{
+        text-align: center;
+        margin-bottom: 31px;
+    }
+    .join-team-content p{
+        margin-bottom: 30px;
+    }
+}
 /* join team design ends here */
