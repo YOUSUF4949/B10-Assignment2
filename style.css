@@ -533,5 +533,8 @@
     .training-experience{
         width: 100%;
     }
+    .hidden-section{
+        display: none;
+    }
 }
 /* training experiense design ends here */
