@@ -28,7 +28,6 @@
   .container{
     max-width: 80%;
     margin: 0 auto;
-    border: 1px solid red;
   }
   /* body section ends */
 
@@ -424,7 +423,6 @@
     height: 100%;
     border-radius: 18px;
 }
-
 /* Join Team section Responsive here */
 @media screen and (max-width: 576px){
     .join-team{
@@ -446,3 +444,94 @@
     }
 }
 /* join team design ends here */
+
+/* training experiense design starts here */
+.training-experience{
+    width: 1060px;
+    margin:100px auto;
+}
+.training-content{
+    width: 640px;
+    margin-bottom: 50px;
+}
+.training-content h2{
+    font-size: 48px;
+    font-weight: 900;
+    color:rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+.training-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.5);
+}
+.training-image{
+
+}
+.training-image .row1{
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+}
+.training-image .row1 div{
+    height: 250px;
+}
+
+.training-image .row1 div img{
+    width: 100%;
+    height: 100%;
+}
+/* row 2 */
+.training-image .row2{
+    display: grid;
+    grid-template-columns: auto 350px 250px;
+}
+.training-image .row1 .text,
+.training-image .row2 .text{
+    color: white;
+    font-weight: bold;
+}
+
+.training-image .row2 div{
+    height: 250px;
+}
+.training-image .row1 .image-box1{
+    background-image: url('/B10A2-versatile-ui/images/exercise1.jpg');
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.training-image .row1 .image-box2{
+    background-image: url('/B10A2-versatile-ui/images/exercise2.png');
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.training-image .row1 .image-box3{
+    background-image: url('/B10A2-versatile-ui/images/exercise3.png');
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* row2 */
+.training-image .row2 .image-box1{
+    background-image: url('/B10A2-versatile-ui/images/exercise4.png');
+    background-size: cover;
+    background-position: center;
+}
+.training-image .row2 .image-box2{
+    background-image: url('/B10A2-versatile-ui/images/exercise5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.training-image .row2 .image-box3{
+    background-image: url('/B10A2-versatile-ui/images/exercise6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* training section Responsive here */
+@media screen and (max-width: 576px){
+    .training-experience{
+        width: 100%;
+    }
+}
+/* training experiense design ends here */
