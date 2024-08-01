@@ -1,7 +1,7 @@
 *,::after,::before{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 /* google fonts here */
 .inter-font {
@@ -26,8 +26,7 @@
   }
   /* container for the width selection */
   .container{
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 100%;
   }
   /* body section ends */
 
