@@ -103,7 +103,7 @@
     }
     
 }
-  /* header section design ends here */
+/* header section design ends here */
 /* header banner section design starts here */
 .banner-section{
     display: flex;
@@ -539,10 +539,6 @@
 }
 /* training experiense design ends here */
 /* BMI Calculator design starts here */
-.calculator{
-
-}
-
 .bmi-content{
     width: 671px;
     margin: 0 auto;
@@ -638,6 +634,10 @@
    width: 49%;
 }
 
+.your-bmi-calculator form select option{
+    color: #333;
+}
+
 form .input-box2{
     display: flex;
     justify-content: space-between;
@@ -663,5 +663,46 @@ form input[type="submit"]{
     outline: none;
     cursor: pointer; 
     margin-top: 25px;
+}
+/* Responsive The Calculator Section */
+@media screen and (max-width: 576px){
+    .calculator .mbi-content{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 32px;
+    }
+    .calculator .mbi-content h2{
+        font-size: 32px;
+    }
+
+    .mbi-calculator{
+        flex-direction: column;
+    }
+    /* calculator chart */
+    .calculator-chart{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .calculator-chart h2{
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 23px;
+    }
+    .calculator-chart table{
+        max-width: 100%;
+    }
+    .your-bmi-calculator{
+        width: 100%;
+        padding: 0px 15px;
+        margin-top: 42px;
+    }
+    .your-bmi-calculator h2{
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 23px;
+        margin-bottom: 14px;
+    }
+    
 }
 /* BMI Calculator design ends here */
