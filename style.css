@@ -710,14 +710,12 @@ form input[type="submit"]{
 .my-team-container{
     width: 1060px;
     margin: 0 auto;
-    border: 1px solid red;
     margin-top: 88px;
 }
 /* team content */
 .team-content{
     width: 670px;
     margin: 0 auto 58px auto; 
-    border: 1px solid red;
     text-align: center;
 }
 
@@ -738,10 +736,7 @@ form input[type="submit"]{
 .team-people-image{
     background-color: rgb(34, 34, 34);
     padding: 20px;
-}
-
-.team-people-image .box{
-    border: 1px solid red;
+    border-radius: 18px;
 }
 .team-people-image .team-img{
     display: grid;
@@ -763,39 +758,66 @@ form input[type="submit"]{
 }
 
 .team-people-image .team-img .box-text p{
-    color: #555;
+    color: #999;
     margin-top: 5px;
 }
 
 .team-people-image .team-img .img-box1{
-    background: url('/B10A2-versatile-ui/images/trainer1.png');
+    background: rgba(0, 0, 0, 0.3) url('/B10A2-versatile-ui/images/trainer1.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 .team-people-image .team-img .img-box2{
-    background: url('/B10A2-versatile-ui/images/trainer2.png');
+    background:rgba(0, 0, 0, 0.3)url('B10A2-versatile-ui/images/trainer2.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 .team-people-image .team-img .img-box3{
-    background: url('/B10A2-versatile-ui/images/trainer3.png');
+    background: rgba(0, 0, 0, 0.3) url('/B10A2-versatile-ui/images/trainer3.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 .team-people-image .team-img .img-box4{
-    background: url('/B10A2-versatile-ui/images/trainer4.png');
+    background: rgba(0, 0, 0, 0.3) url('/B10A2-versatile-ui/images/trainer4.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 .team-people-image .team-img .img-box5{
-    background: url('/B10A2-versatile-ui/images/trainer5.png');
+    background: rgba(0, 0, 0, 0.3) url('/B10A2-versatile-ui/images/trainer5.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 .team-people-image .team-img .img-box6{
-    background: url('/B10A2-versatile-ui/images/trainer6.png');
+    background: rgba(0, 0, 0, 0.3)url('/B10A2-versatile-ui/images/trainer6.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
+/* Responsive the Team section */
+@media screen and (max-width: 576px){
+    .team-content{
+        width: 90%;
+        margin:0 auto 37px auto;
+    }
+    .team-content h2{
+        font-size: 32px;
+    }
+    .team-people-image .team-img{
+        grid-template-columns: 1fr;
+    }
+    .team-people-image{
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 18px;
+    }
 
+    .team-people-image .team-img .box{
+        width: 100%;
+    }
+}
 /* Our Team section design ends here */
