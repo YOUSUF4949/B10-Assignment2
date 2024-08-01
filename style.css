@@ -469,6 +469,7 @@
     display: grid;
     grid-template-columns: 300px auto 300px;
     gap: 5px;
+    margin-bottom: 5px;
 }
 .training-image .row1 div{
     height: 250px;
@@ -537,123 +538,130 @@
     }
 }
 /* training experiense design ends here */
-
 /* BMI Calculator design starts here */
 .calculator{
-    width: 100%;
-    background-color: rgb(34, 34, 34);
-    padding: 50px 0px;
+
 }
 
-.calculator-bmi{
-    width: 1060px;
+.bmi-content{
+    width: 671px;
     margin: 0 auto;
-    display: flex;
-    padding: 20px;
-    /* align-items: center; */
-    justify-content: space-between;
-}
-.calculator-chart{
-    width: 400px;
 }
 
+.mbi-calculator{
+    width: 100%;
+    height: auto;
+    background-color: rgb(34, 34, 34);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: center;
+    padding: 52px 0;
+    
+}
+/* calculator chart */
+.calculator-chart{
+    width: 443px;
+}
 .calculator-chart h2{
     font-size: 28px;
     font-weight: 900;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     margin-bottom: 50px;
 }
-.calculator-chart table{
-    width: 310px;
-    height: 216px;
-}
-.calculator-chart table,
-.calculator-chart tr,
-.calculator-chart th,
-.calculator-chart td{
-    border: 1px solid #333;
+.calculator-chart table, tr, th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
-    padding: 0px 15px;
+    padding: 10px 15px;
+    width: 350px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+/* your bmi calculator */
+.calculator .mbi-content{
+    width: 671px;
+    margin: 0px auto 88px auto;
 }
 
-.bmi-calculator{
-    width: 577px;
-}
-/* bmi-calculator */
-.bmi-cal-text h2{
-    font-size: 28px;
+.mbi-content h2{
+    font-size: 48px;
     font-weight: 900;
     color:rgb(255, 255, 255);
     margin-bottom: 14px;
 }
-.bmi-cal-text p{
+.mbi-content p{
     font-size: 14px;
     font-weight: 400;
-    color:rgba(255, 255, 255, 0.5);
-    margin-bottom: 34px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
 }
-
-.bmi-calculator form{
-    
+.your-bmi-calculator{
+    width: 577px;
 }
-.bmi-calculator form input,
-.bmi-calculator form select{
-    font-size: 16px;
-    font-weight: bold;
-    color:rgba(255, 255, 255, 0.6);
-    padding: 12px 40px 12px 20px;
+.your-bmi-calc-content{
+    margin-bottom: 30px;
+}
+.your-bmi-calculator h2{
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+.your-bmi-calculator p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* bmi form */
+.your-bmi-calculator form{
     width: 100%;
+}
+.your-bmi-calculator form .input-box1{
+    display: flex;
+    justify-content: space-between;
+}
+.your-bmi-calculator form input,
+.your-bmi-calculator form select{
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom:12px;
-}
-.bmi-calculator form select > option{
-    color:rgb(34, 34, 34);
-}
-.bmi-calculator form #input1{
-    width: 49%;
     border: none;
     outline: none;
-    border-radius: 8px;
 }
-.bmi-calculator form #input2{
-    width: 49%;
-    float: right;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-}
-.bmi-calculator form #input3{
-    width: 49%;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-}
-.bmi-calculator form #gender{
-    width: 49%;
-    float: right;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-}
-.bmi-calculator form #activity{
-    border: none;
-    outline: none;
-    border-radius: 8px;
+.your-bmi-calculator form .input-box1 input{
+   width: 49%;
 }
 
-.bmi-calculator form select{
-    color:rgba(255, 255, 255, 0.6);
+form .input-box2{
+    display: flex;
+    justify-content: space-between;
 }
-.bmi-calculator form #calculate-btn{
+form .input-box2 input,
+form .input-box2 select{
+    width: 49%;
+} 
+
+form select[id="activity"]{
+    width: 100%;
+}
+
+form input[type="submit"]{
     border-radius: 42px;
     background-color: rgb(230, 83, 60);
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
+    width: 224px;
+    height: 54px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
     border: none;
     outline: none;
-    cursor: pointer;
+    cursor: pointer; 
+    margin-top: 25px;
 }
 /* BMI Calculator design ends here */
