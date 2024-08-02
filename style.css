@@ -884,11 +884,47 @@ form input[type="submit"]{
     text-align: center;
 }
 
-.copy-right hr{
-    /* color: rgba(255, 255, 255, 0.1); */
-    color: red;
+.copy-right .drowline{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 36px;
 }
 .copy-right p{
     color: rgba(255, 255, 255, 0.5);
+}
+/* Responsive Footer section */
+@media screen and (max-width: 576px){
+    .footer-text-container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        padding: 60px 15px;
+    }
+
+    .footer-brand-content{
+        width:100%;
+    }
+    .get-start-container{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .get-start-box{
+        width: 100%;
+    }
+    .get-start-box h3{
+        margin: 24px 0px;
+    }
+    .get-start-box ul li{
+        margin-bottom: 10px;
+    }
+    /* copy right */
+    .copy-right{
+        width: 100%;
+        padding: 0 15px;
+    }
+
 }
 /* Footer design section ends here */
