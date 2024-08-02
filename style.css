@@ -26,7 +26,8 @@
   }
   /* container for the width selection */
   .container{
-    max-width: 100%;
+    max-width:80%;
+    margin: 0 auto;
   }
   /* body section ends */
 
@@ -825,6 +826,7 @@ form input[type="submit"]{
     background-color: rgba(255, 255, 255, 0.1);
     max-width: 100%;
     margin-top: 88px;
+    padding-bottom: 66px;
 }
 
 .footer-text-container{
@@ -833,24 +835,60 @@ form input[type="submit"]{
     padding: 66px 0px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .footer-brand-content{
     width:50%;
-    border: 1px solid red;
+}
+
+.footer-brand-content h2{
+    font-size: 70px;
+    font-weight: 900;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+.footer-brand-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
 .get-start-container{
     width: 50%;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+.get-start-box h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+
+.get-start-box ul li{
+    list-style: none;
+    font-size: 23px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px; 
+}
+.get-start-box ul li:last-child{
+    margin-bottom: 0;
+}
 .copy-right{
     width: 1060px;
     margin: 0 auto;
-    
+    text-align: center;
+}
+
+.copy-right hr{
+    /* color: rgba(255, 255, 255, 0.1); */
+    color: red;
+}
+.copy-right p{
+    color: rgba(255, 255, 255, 0.5);
 }
 /* Footer design section ends here */
