@@ -19,7 +19,7 @@
 
   /* body section starts */
   #body-section{
-    width: 100%;
+    width:100%;
     background: rgb(0, 0, 0);
     color: white;
     font-family: inter;
@@ -333,9 +333,14 @@
         margin-bottom: 50px;
     }
     .card {
-        width: 331px;
+        width: 100%;
         margin: 0 auto;
         margin-top: 40px;
+    }
+
+    .card-container{
+        width: 60%;
+        margin: 0 auto;
     }
     .habits-content{    
         width: 100%;
@@ -925,6 +930,6 @@ form input[type="submit"]{
         width: 100%;
         padding: 0 15px;
     }
-
 }
 /* Footer design section ends here */
+/* My Website have done */
