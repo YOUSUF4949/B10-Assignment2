@@ -12,7 +12,7 @@
   .playwrite-font {
     font-family: "Playwrite CU", cursive;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
   }
   /* google fonts ends */
@@ -122,7 +122,7 @@
 }
 .banner-text-container h2 > span{
     font-family: "Playwrite CU", cursive;
-    font-weight: 400;
+    font-weight: 300;
 }
 .banner-text-container p{
     font-size: 16px;
