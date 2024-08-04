@@ -559,8 +559,6 @@
     width: 100%;
     height: auto;
     background-color: rgb(34, 34, 34);
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     display: flex;
     justify-content: center;
     padding: 52px 0;
@@ -700,8 +698,8 @@ form input[type="submit"]{
         font-weight: 900;
         margin-bottom: 23px;
     }
-    .calculator-chart table{
-        max-width: 100%;
+    .calculator-chart table, tr{
+        width: 100%;
     }
     .your-bmi-calculator{
         width: 100%;
