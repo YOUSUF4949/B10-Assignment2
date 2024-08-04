@@ -23,6 +23,7 @@
     background: rgb(0, 0, 0);
     color: white;
     font-family: inter;
+    /* border: 1px solid red; */
   }
   /* container for the width selection */
   .container{
@@ -60,7 +61,6 @@
   }
   #navbar ul li:nth-child(1){
     margin-left: 0px;
-    background-color: rgb(230, 83, 60);
     border-radius: 46px;
     font-size: 18px;
     font-weight: 600;
@@ -100,8 +100,7 @@
 
     #navbar h2{
         font-size: 30px;
-    }
-    
+    }   
 }
 /* header section design ends here */
 /* header banner section design starts here */
@@ -150,27 +149,31 @@
     margin-right: 0;
 }
 .banner-image{
-    width: 40%;
-    height: 580px;
+    width: 35%;
+    height: 550px;
     position: relative;
 }
 
-.banner-image img{
+.banner-image .image-box{
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index : -9999;
 }
+
+.banner-image .image-box img{
+    width: 100%;
+    height: 100%;
+}
+
 .banner-image .box{
     position: absolute;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(48, 48, 48, 0.54);
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 12px;
 }
 
 .banner-image .box1 h2{
-    font-size: 40px;
+    font-size: 35px;
 }
 .banner-image .box2 h2{
     font-size: 24px;
@@ -182,7 +185,7 @@
 }
 .banner-image .box1{
     top: 124px;
-    left: 65%;
+    right: 0;
 }
 
 .banner-image .box2{
@@ -240,31 +243,28 @@
     /* banner image responsive */
     .banner-image{
         width: 100%;
-        height: 400px;
-        padding: 15px;
+        height: 500px;
         margin-top: 35px;
     }
 
-    .banner-image img{
-        height: 100%;
+    .banner-image .image-box{
         width: 100%;
-        z-index: -9999;
-    }
-
+        height: 100%;
+    
+    } 
     .banner-image .box1{
-        top: 20px;
-        right: 0;
+        top: 15%;
+        right: 3%;
     }
-
     .banner-image .box1 h2{
-        font-size: 25px;
+        font-size: 30px;
     }
     .banner-image .box p{
         font-size: 10px;
     }
     .banner-image .box2{
-        left: 10px;
-        bottom: 0;
+        left: 3%;
+        bottom: 10%;
     }
 }
 /* header banner section design ends here */
@@ -500,38 +500,43 @@
     height: 250px;
 }
 .training-image .row1 .image-box1{
-    background-image: url('/B10A2-versatile-ui/images/exercise1.jpg');
-    background-repeat : no-repeat;
+    background: rgba(6, 255, 210, 0.5) url('/B10A2-versatile-ui/images/exercise1.jpg');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 .training-image .row1 .image-box2{
-    background-image: url('/B10A2-versatile-ui/images/exercise2.png');
-    background-repeat : no-repeat;
+    background: rgba(255, 0, 0, 0.3) url('/B10A2-versatile-ui/images/exercise2.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode : darken;
 }
 .training-image .row1 .image-box3{
-    background-image: url('/B10A2-versatile-ui/images/exercise3.png');
-    background-repeat : no-repeat;
+    background: rgba(0, 0, 0, 0.5) url('/B10A2-versatile-ui/images/exercise3.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 /* row2 */
 .training-image .row2 .image-box1{
-    background-image: url('/B10A2-versatile-ui/images/exercise4.png');
+    background: rgba(0, 0, 0, 0.5) url('/B10A2-versatile-ui/images/exercise4.png');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
+    position: relative;
 }
+
 .training-image .row2 .image-box2{
-    background-image: url('/B10A2-versatile-ui/images/exercise5.jpg');
+    background: rgba(66, 255, 0, 0.3) url('/B10A2-versatile-ui/images/exercise5.jpg');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 .training-image .row2 .image-box3{
-    background-image: url('/B10A2-versatile-ui/images/exercise6.jpg');
+    background: rgba(0, 71, 255, 0.3) url('/B10A2-versatile-ui/images/exercise6.jpg');
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 }
 /* training section Responsive here */
 @media screen and (max-width: 576px){
