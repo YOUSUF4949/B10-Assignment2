@@ -64,6 +64,7 @@
     border-radius: 46px;
     font-size: 18px;
     font-weight: 600;
+    background-color: rgb(230, 83, 60);
   }
   #navbar ul li a{
     text-decoration: none;
