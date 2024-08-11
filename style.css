@@ -845,6 +845,7 @@ form input[type="submit"]{
 
 /* Challenging section design starts here */
 .why-choose-us{
+    width: 100%;
     background-color: gray;
     padding: 50px 0px;
     margin-top: 88px;
@@ -917,7 +918,7 @@ form input[type="submit"]{
 
 .service-box .service-icon i{
     font-size: 25px;
-    color: orange;
+    color: tomato;
 }
 
 .service-box h2{
@@ -947,17 +948,71 @@ form input[type="submit"]{
     border-radius: 18px;
 }
 
-.service-images .image2{
-    grid-template-areas: 1/3;
-}
-
 .service-images div img{
     width: 100%;
     height: 100%;
     border-radius: 24px;
     border: 1px solid #333;
 }
+/* Responsive the challenging section */
+@media screen and (max-width: 576px){
+    .why-choose-us{
+        padding: 30px 10px;
+    }
+    .choose-container{
+        width: 100%;
+    }
+    .choose-container .choose-content{
+        width: 100%;
+        text-align: left;
+        margin: 0 0 30px 0;
+        padding: 6px;
+    }
+    .choose-content {
+        max-width: 100%;
+    }
+    .choose-content h1{
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    /* our service container */
+    .our-service-container{
+        flex-direction: column-reverse;
+    }
+    /* our service */
+    .our-service{
+        grid-template-areas: 
+        'service-card1'
+        'service-card2'
+        'service-card3'
+        'service-card4';
+        margin-top: 20px;
+        margin-right: 0px;
+    }
 
+    .our-service{
+        max-width: 100%;
+    }
+    /* our service image */
+    .service-images{
+        max-width: 100%;
+        grid-template-areas: 
+        'image1 image2'
+        'image3 image3';
+        gap: 10px;
+    }
+    .service-images div{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .service-images div img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
 /* Challenging section design ends here */
 /* Footer design section starts here */
 #my-footer-section{
