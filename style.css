@@ -452,6 +452,7 @@
     .join-team .join-team-image{
         width: 100%;
         border-radius: 18px;
+        height: auto;
     }
     .join-team-image img{
         width: 100%;
