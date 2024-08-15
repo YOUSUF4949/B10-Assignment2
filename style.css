@@ -33,12 +33,15 @@
   /* body section ends */
 
   /* header section design starts here */
+  .banner-container{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    margin-top:0;
+  }
   #navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
-    padding: 0px 15px;
+    padding: 40px 15px 0 15px;
   }
 
   #navbar h2{
@@ -92,7 +95,7 @@
     }
     #navbar{
         justify-content: space-between;
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
 
     #navbar ul li{
